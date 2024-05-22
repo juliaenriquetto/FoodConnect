@@ -1,6 +1,4 @@
-package br.unicamp.cotuca.dpd.foodConnect.controller;
-
-import br.unicamp.cotuca.dpd.foodConnect.client.Client;
+package br.unicamp.cotuca.dpd.foodConnect.client;
 
 public record ClientResponseDTO(Long id, String nome, String email, Integer cep, Integer numEndereco, String complemento, String entrega, Integer telefone, String pagamento) {
     
