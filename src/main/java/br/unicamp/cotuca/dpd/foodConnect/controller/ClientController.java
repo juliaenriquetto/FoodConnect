@@ -2,7 +2,12 @@ package br.unicamp.cotuca.dpd.foodConnect.controller;
 
 import java.util.List;
 
+import org.apache.catalina.connector.Response;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -12,6 +17,7 @@ import br.unicamp.cotuca.dpd.foodConnect.client.Client;
 import br.unicamp.cotuca.dpd.foodConnect.client.ClientRepository;
 import br.unicamp.cotuca.dpd.foodConnect.client.ClientRequestDTO;
 import br.unicamp.cotuca.dpd.foodConnect.client.ClientResponseDTO;
+import org.springframework.web.bind.annotation.PutMapping;
 
 //indicando que é um controller
 @RestController
@@ -37,5 +43,20 @@ public class ClientController {
         
         List<ClientResponseDTO> clientList = repository.findAll().stream().map(ClientResponseDTO::new).toList();
         return clientList; 
+    }
+
+    //update
+    @PutMapping("/clients/{id}")
+    public String updateClient(@PathVariable String id) {
+       // fazer de cada atributo 
+       return null; 
+    }
+
+    //delete
+    @DeleteMapping("/clients/{id}")
+    public String deleteClientItem(@PathVariable("id") Long id) {
+        repository.deleteById(id); 
+
+        return ("Client deleted successfully");
     }
 }
