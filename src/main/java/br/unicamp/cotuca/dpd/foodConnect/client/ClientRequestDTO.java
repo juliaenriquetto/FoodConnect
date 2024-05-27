@@ -1,4 +1,16 @@
 package br.unicamp.cotuca.dpd.foodConnect.client;
 
-public record ClientRequestDTO(String nome, String email, Integer cep, Integer numEndereco, String complemento, String entrega, Integer telefone, String pagamento) {
-}
+public record ClientRequestDTO(
+    String fullname, 
+    String email, 
+    String cep, 
+    String delivery, 
+    Integer phone, 
+    String payment,
+    String neighborhood,
+    String city,
+    String uf,
+    String complement,
+    Short addressNumber,
+    String streetName
+    ) {}
