@@ -1,8 +1,8 @@
 
-insert into tblClient (nome, email, cep, numEndereco, complemento, entrega, telefone, pagamento) values ('Julia Enriquetto', 'julialinda@gmail.com', 12888905, 406, 'Apto 32', 'Retirar', 19998659401,'Debito')
-insert into tblClient (nome, email, cep, numEndereco, complemento, entrega, telefone, pagamento) values ('Clara Andrade', 'claraandrade@gmail.com', 12995405, 6, ' ', 'Receber', 19971177089,'Dinheiro')
-insert into tblClient (nome, email, cep, numEndereco, complemento, entrega, telefone, pagamento) values ('Laura Nakamura', 'laurinhagatinha@gmail.com', 10356475, 666, 'Apto 201', 'Retirar', 199986401, 'Credito')
-insert into tblClient (nome, email, cep, numEndereco, complemento, entrega, telefone, pagamento) values ('João Pedro BB', 'jpbb@gmail.com', 12888905, 406, 'Apto 32', 'Retirar', 1998445732, 'Debito')
+insert into tblClient (fullname, email, cep, delivery, phone, payment) values ('Julia Enriquetto', 'julialinda@gmail.com', '12888-905','Retirar', 19998659401,'Debito')
+insert into tblClient (fullname, email, cep, delivery, phone, payment) values ('Clara Andrade', 'claraandrade@gmail.com', '12995-405', 'Receber', 19971177089,'Dinheiro')
+insert into tblClient (fullname, email, cep, delivery, phone, payment) values ('Laura Nakamura', 'laurinhagatinha@gmail.com', '10356-475', 'Retirar', 199986401, 'Credito')
+insert into tblClient (fullname, email, cep, delivery, phone, payment) values ('João Pedro BB', 'jpbb@gmail.com', '12888-905', 'Retirar', 1998445732, 'Debito')
 
 -- insert into tblMenu(nome, valor) values ('Macarrão', 'R$ 60,00')
 -- insert into tblMenu(nome, valor) values ('Pizza', 'R$ 80,00')
