@@ -9,8 +9,8 @@ import lombok.ToString;
 @AllArgsConstructor
 public class Address {
     private String cep;
-    private String logradouro; 
+    private String cidade; 
     private String bairro;
-    private String localidade; 
-    private String uf; 
+    private String logradouro; 
+    private String estado; 
 }

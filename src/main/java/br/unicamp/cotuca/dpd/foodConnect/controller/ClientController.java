@@ -48,9 +48,9 @@ public class ClientController {
             String cep = data.cep();
 
             Address address = cepClient.fetchAddressByCep(cep);
-            client.setCity(address.getLocalidade());
-            client.setNeighborhood(address.getBairro());
-            client.setUf(address.getUf());
+            client.setCity(address.getCidade());
+            client.setNeighborhood(address.getLogradouro());
+            client.setUf(address.getEstado());
             client.setStreetName(address.getLogradouro());
 
             repository.save(client);
